@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/*コメント*/
+div {
+    /* margin-bottom: 500px;
+    margin-top: 200px; */
+    /*上(top)、右(right)、下(bottom)、左(left)*/
+    margin: 200px 200px 500px 200px;
+
+    width: calc(100% - 50px);
+    height: 100px;
+    background-color: orange;
+    transform: translate(-100px, 30px) rotate(45deg) skew(70deg);
+}
+p {
+    color: rgba(20, 161, 32, 0.781);
+    /* background-color: skyblue; */
+    background-image: url("./png/haikei.png");
+    background-repeat: no-repeat;
+    font-weight: bold;
+    font-size: 80px;
+    text-indent: 1em;
+    line-height: 1.8;
+}
+
+.text {
+    color: green;
+}
+
+#text {
+    color: red;
+}
+
+a:hover {
+    color: red;
+}
+
+.parent p{
+    color:red;
+}
+
+.parent > p{
+    color:green;
+}

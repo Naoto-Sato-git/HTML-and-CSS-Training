@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+.parent p{
+    color: red;
+}
+
+.parent > p{
+    color:green;
+}
+
+.abc,
+.def {
+    width:30px;
+    height:30px;
+    background-color:#000;
+    margin:10px;
+}
+
+.def.xyz{
+    background-color:green;
+}
+
+div.def{
+    background-color:red;
+}
+
+.def + a{
+    font-size:30px;
+}

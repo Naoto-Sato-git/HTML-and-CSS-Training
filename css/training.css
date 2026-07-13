@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+/*
+- 「.abc」に{color: red;}
+- 「h1タグでかつ.headline」に{color:red;}
+- 「.abc」の子要素すべてに{color:red;}
+- 「.abc」の直下の子要素の隣のpタグのみに{color:red;}
+- 「.abc」の直下の<a>タグのみにカーソルをのせた時だけ{color:red;}
+-
+*/
+
+/* .abc {
+    color:red;
+} */
+
+h1.headline {
+    color:red;
+}
+
+.abc > p {
+    color:red;
+}
+
+.abc > ul + p {
+    color:red;
+}
+
+.abc > a:hover{
+    color:red;
+}
