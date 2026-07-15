@@ -13,7 +13,7 @@
     color:red;
 } */
 
-h1.headline {
+/* h1.headline {
     color:red;
 }
 
@@ -27,4 +27,79 @@ h1.headline {
 
 .abc > a:hover{
     color:red;
+} */
+
+/* .abc{
+    color:red;
+}
+
+.abc{
+    color:green;
+}
+
+.abc p{
+    color:violet;
+}
+
+p {
+    color:cornflowerblue !important;
+} */
+/*Q1*/
+p{
+    color:red;
+}
+.text{
+    color:blue;
+}
+/*Q2*/
+.list > li{
+    color:red;
+}
+.list .list-item{
+    color:blue;
+}
+/*Q3*/
+.parent > a{
+    color:red;
+}
+a{
+    color:blue !important;
+}
+/* PC */
+.sample{
+    background-color: #000;
+}
+/* SP */
+@media screen and (max-width: 768px){
+    .sample{
+        background-color: red;
+    }
+}
+/* Tablet */
+/* @media screen and (max-width: 769px) and (min-width: 690px){
+    .sample{
+        background-color: red;
+    }
+} */
+.box {
+    text-align:center;
+    padding:20px;
+    border:2px solid red;
+    margin: 20px;
+}
+
+.block{
+    text-align:center;
+    padding:20px;
+    border:2px solid red;
+    margin: 20px;
+    display:inline;
+}
+
+.line{
+    text-align:center;
+    padding:20px;
+    border:2px solid red;
+    margin: 20px;
+    display:block;
 }

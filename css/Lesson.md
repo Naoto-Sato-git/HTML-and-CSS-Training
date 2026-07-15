@@ -140,3 +140,98 @@ div.def{
 }
 ```
 defクラスの要素の次にaセレクタがある場合に適用
+
+## ➅ 詳細度
+```css
+.abc{
+    color:red;
+}
+
+.abc{
+    color:green;
+}
+
+.abc p{
+    color:violet;
+}
+
+p {
+    color:cornflowerblue !important;
+}
+```
+CSSがバッティングした時のスタイルの優先度は詳細度によって決まる。
+<br>・後に書かれたスタイルが優先される
+<br>・子要素の記述(より詳細な記述)がある場合は、それが優先される
+<br>・"!important"がある場合は、それが優先される
+<br>業務でのコツ
+<br>・なるべくclassを指定する
+<br>・なるべく子孫セレクタよりも子セレクタを使う
+<br>・なるべくセレクタは3つを超えないようにする
+<br>このように、詳細度や順番によって優先度が変わる仕様のことを「カスケード」と呼ぶ。
+
+## ➆ 規則
+```css
+.sample{
+    background-color: #000;
+}
+@media screen and (max-width: 768px){
+    .sample{
+        background-color: red;
+    }
+}
+```
+"@media screen"でウィンドウの大きさに応じたスタイルの変更が可能になる。
+<br>デバイスの大きさに応じて最適なレイアウトを作る
+
+## ➇ デフォルトのスタイル
+最低限の見た目を担保するために、ブラウザごとにデフォルトのスタイルが与えられている。
+<br>一方で、ブラウザによってデフォルトのスタイルに差異があるせいで、見え方がブラウザに依存してしまう。
+<br>⇒ 初期値の統一化をしたい
+<br>・ResetCSS：すべてのタグの初期値を全部0にしている
+<br>https://meyerweb.com/eric/tools/css/reset/
+<br>・NormalizeCSS：差異があるところだけスタイルを統一
+<br>https://necolas.github.io/normalize.css/8.0.1/normalize.css
+<br>・SanitizeCSS：NormalizeCSSの上位互換
+<br>https://csstools.github.io/sanitize.css/
+
+## ➈ ボックスモデルとブロック要素・インライン要素について
+```css
+.box {
+    text-align:center;
+    padding:20px;
+    border:2px solid red;
+    margin: 20px;
+}
+```
+ボックスモデル
+<br>・"text-align:center;"はテキストを中央寄せにする
+<br>・"padding"は要素の内側に間隔をあけるためのプロパティ
+<br>・"border"はpaddingとmarginの間
+<br>・"margin"は要素と要素の間隔
+<br>ブロック要素：上下左右にmarginを当てることができるが、要素を横並びにすることは不可。
+<br>インライン要素：左右にのみmarginがつく。また、横並びになる。
+```css
+.block{
+    text-align:center;
+    padding:20px;
+    border:2px solid red;
+    margin: 20px;
+    display:inline;
+}
+
+.line{
+    text-align:center;
+    padding:20px;
+    border:2px solid red;
+    margin: 20px;
+    display:block;
+}
+```
+CSS側でブロック要素、インライン要素を編集することはできる(dsiplay:inlineなど)
+
+## まとめ
+・CSSはHTMLを装飾するスタイルシート言語
+<br>・CSSはプロパティとプロパティの値を設定することで実装
+<br>・@規則というものがあり、特に重要なのは"@media"
+<br>・ブラウザごとのデフォルトの差異を平地化するのが一般的
+<br>・ボックスモデル、ブロック要素・インライン要素という仕様がある
