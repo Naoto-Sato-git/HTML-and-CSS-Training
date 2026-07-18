@@ -13,9 +13,49 @@
 
     <link rel="stylesheet" href="./assets/css/sanitize.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="icon" type="image/png" href="assets/images/png/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/png/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/images/png/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/png/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/images/png/favicon/site.webmanifest" />
 </head>
 <body>
+
+    <div class="hero">
+        <strong>Hello World!</strong>
+        <div class="hero-particles" id="particles-js"></div>
+        <video autoplay loop muted preload>
+            <source src="./assets/video/hero2.mp4" type="video/mp4">
+        </video>
+    </div>
     
+    <header class="header">
+        <h1 class="header-logo">
+            <a href="#">
+                <svg height="60" preserveAspectRatio="xMidYMid" viewBox="0 .232 259.247 255.761" width="60" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m234.391 113.538c-8.049-8.048-21.099-8.048-29.148 0h-42.184l29.829-29.828c11.383 0 20.61-9.228 20.61-20.611s-9.227-20.612-20.61-20.612c-11.384 0-20.611 9.229-20.611 20.612l-29.829 29.829v-42.185c8.049-8.049 8.049-21.099 0-29.148-8.05-8.05-21.1-8.05-29.149 0s-8.049 21.1 0 29.148v42.185l-29.828-29.83c0-11.382-9.228-20.61-20.611-20.61s-20.611 9.228-20.611 20.61c0 11.384 9.228 20.612 20.61 20.612l29.83 29.828h-42.185c-8.05-8.049-21.1-8.048-29.15 0s-8.048 21.1 0 29.15c8.05 8.048 21.1 8.048 29.15 0h42.183l-29.827 29.827c-11.383 0-20.611 9.227-20.611 20.61 0 11.384 9.228 20.612 20.61 20.612 11.384 0 20.612-9.228 20.612-20.611l29.828-29.829v42.184c-8.049 8.049-8.049 21.1 0 29.149 8.05 8.049 21.1 8.049 29.15 0 8.048-8.05 8.048-21.1 0-29.15v-42.183l29.828 29.829c0 11.383 9.227 20.61 20.61 20.61 11.384 0 20.612-9.227 20.612-20.61 0-11.384-9.228-20.611-20.611-20.611l-29.83-29.829h42.185c8.05 8.05 21.1 8.05 29.148 0 8.05-8.049 8.05-21.1 0-29.149" fill="#ffb13b"/>
+                    <title>BugFix Inc.</title>
+                </svg>
+            </a>
+        </h1>
+        <nav class="header-nav">
+            <ul class="header-navlist">
+                <li class="header-navitem">
+                    <a href="#">About</a>
+                </li>
+                <li class="header-navitem">
+                    <a href="#">Feature</a>
+                </li>
+                <li class="header-navitem">
+                    <a href="#">Blog</a>
+                </li>
+                <li class="header-navitem">
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     
     <section class="section">
         <h1 class="section-headline">About</h1>
@@ -52,36 +92,211 @@
             </li>
             <li class="grid-item">
                 <dl class="feature">
-                    <dt>2.High Performance</dt>
-                    <dd>
+                    <dt class="feature-headline">2.High Performance</dt>
+                    <dd class="feature-img">
                         <img src="./assets/images/png/001-layout.png" width="100" height="100" alt="High Performance">
                     </dd>
-                    <dd>Text text text text text text text text text text text text text text text...</dd>
+                    <dd class="feature-description">Text text text text text text text text text text text text text text text...</dd>
                 </dl>
             </li>
             <li class="grid-item">
                 <dl class="feature">
-                    <dt>3.Strong Responsibility</dt>
-                    <dd>
+                    <dt class="feature-headline">3.Strong Responsibility</dt>
+                    <dd class="feature-img">
                         <img src="./assets/images/png/002-jigsaw.png" width="100" height="100" alt="Strong Responsibility">
                     </dd>
-                    <dd>Text text text text text text text text text text text text text text text...</dd>
+                    <dd class="feature-description">Text text text text text text text text text text text text text text text...</dd>
                 </dl>
             </li>
             <li class="grid-item">
                 <dl class="feature">
-                    <dt>4.Excellent Technology</dt>
-                    <dd>
+                    <dt class="feature-headline">4.Excellent Technology</dt>
+                    <dd class="feature-img">
                         <img src="./assets/images/png/003-product.png" width="100" height="100" alt="Excellent Technology">
                     </dd>
-                    <dd>Text text text text text text text text text text text text text text text...</dd>
+                    <dd class="feature-description">Text text text text text text text text text text text text text text text...</dd>
                 </dl>
             </li>
         </ul>
     </section>
 
 
+    <section class="section">
+        <h1 class="section-headline">Blog</h1>
 
-    <script src="./assets/js/script.js"></script>
+        <ul class="grid grid-col-3">
+            <li class="grid-item">
+                
+                <article class="card">
+                    <a href="#" class="card-link">
+                        <span class="card-label">New</span>
+                        <img class="card-image" src="https://dummyimage.com/200x100/000/fff" alt="thumbnail">
+                        <div class="card-info">
+                            <time datetime="2022-01-01" class="card-time">2022.01.01</time>
+                            <h1 class="card-headline">Title text text text text text text text</h1>
+                            <p class="card-description">Text text text text text text text text text text text text...</p>
+                        </div>
+                    </a>
+                    <dl class="avator">
+                        <dt class="avator-name">Seito</dt>
+                        <dd class="avator-image">
+                            <img src="https://dummyimage.com/50x50/000/fff" alt="Author">
+                        </dd>
+                    </dl>
+                </article>
+
+            </li>
+            <li class="grid-item">
+                
+                <article class="card">
+                    <a href="#" class="card-link">
+                        <img class="card-image" src="https://dummyimage.com/200x100/000/fff" alt="thumbnail">
+                        <div class="card-info">
+                            <time datetime="2022-01-01" class="card-time">2022.01.01</time>
+                            <h1 class="card-headline">Title text text text text text text text</h1>
+                            <p class="card-description">Text text text text text text text text text text text text...</p>
+                        </div>
+                    </a>
+                    <dl class="avator">
+                        <dt class="avator-name">Seito</dt>
+                        <dd class="avator-image">
+                            <img src="https://dummyimage.com/50x50/000/fff" alt="Author">
+                        </dd>
+                    </dl>
+                </article>
+
+            </li>
+            <li class="grid-item">
+                
+                <article class="card">
+                    <a href="#" class="card-link">
+                        <img class="card-image" src="https://dummyimage.com/200x100/000/fff" alt="thumbnail">
+                        <div class="card-info">
+                            <time datetime="2022-01-01" class="card-time">2022.01.01</time>
+                            <h1 class="card-headline">Title text text text text text text text</h1>
+                            <p class="card-description">Text text text text text text text text text text text text...</p>
+                        </div>
+                    </a>
+                    <dl class="avator">
+                        <dt class="avator-name">Seito</dt>
+                        <dd class="avator-image">
+                            <img src="https://dummyimage.com/50x50/000/fff" alt="Author">
+                        </dd>
+                    </dl>
+                </article>
+
+            </li>
+        </ul>
+
+        <div class="section-button">
+            <a href="#" class="button">
+                Blog Page
+            </a>
+        </div>
+    </section>
+
+
+    <section class="section section-secondary">
+        <h1 class="section-headline">Contact</h1>
+        
+        <form class="form" action="">
+            <table class="form-table">
+                <tr>
+                    <th>
+                        <label for="menu">
+                            Menu
+                        </label>
+                    </th>
+                    <td>
+                        <select class="select" name="" id="menu">
+                            <option value="menu-1">Menu 1</option>
+                            <option value="menu-2">Menu 2</option>
+                            <option value="menu-3">Menu 3</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="Name">
+                            Name
+                        </label>
+                    </th>
+                    <td>
+                        <input class="input" type="text" id="Name">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="email">
+                            Email
+                        </label>
+                    </th>
+                    <td>
+                        <input class="input" type="email" id="email">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Gender</th>
+                    <td>
+                        <label class="radio">
+                            <input type="radio" name="gender" value="male">Male
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="gender" value="femail">Femail
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="gender" value="other">Other
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="detail">
+                            Detail
+                        </label>
+                    </th>
+                    <td>
+                        <textarea class="textarea" id="detail" cols="30" rows="10"></textarea>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="form-button">
+                <button class="button button-submission" type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <aside  class="works">
+        <img src="https://dummyimage.com/150x80/ccc/fff" alt="logo">
+        <img src="https://dummyimage.com/150x80/ccc/fff" alt="logo">
+        <img src="https://dummyimage.com/150x80/ccc/fff" alt="logo">
+        <img src="https://dummyimage.com/150x80/ccc/fff" alt="logo">
+        <img src="https://dummyimage.com/150x80/ccc/fff" alt="logo">
+    </aside>
+
+    <footer class="footer">
+
+        <figure class="footer-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8254544793112!2d139.76255968885494!3d35.6812996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1784359636882!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        
+            <figcaption class="footer-mapinfo">
+                <div class="footer-maplogo">
+                    <svg height="60" preserveAspectRatio="xMidYMid" viewBox="0 .232 259.247 255.761" width="60" xmlns="http://www.w3.org/2000/svg"><path d="m234.391 113.538c-8.049-8.048-21.099-8.048-29.148 0h-42.184l29.829-29.828c11.383 0 20.61-9.228 20.61-20.611s-9.227-20.612-20.61-20.612c-11.384 0-20.611 9.229-20.611 20.612l-29.829 29.829v-42.185c8.049-8.049 8.049-21.099 0-29.148-8.05-8.05-21.1-8.05-29.149 0s-8.049 21.1 0 29.148v42.185l-29.828-29.83c0-11.382-9.228-20.61-20.611-20.61s-20.611 9.228-20.611 20.61c0 11.384 9.228 20.612 20.61 20.612l29.83 29.828h-42.185c-8.05-8.049-21.1-8.048-29.15 0s-8.048 21.1 0 29.15c8.05 8.048 21.1 8.048 29.15 0h42.183l-29.827 29.827c-11.383 0-20.611 9.227-20.611 20.61 0 11.384 9.228 20.612 20.61 20.612 11.384 0 20.612-9.228 20.612-20.611l29.828-29.829v42.184c-8.049 8.049-8.049 21.1 0 29.149 8.05 8.049 21.1 8.049 29.15 0 8.048-8.05 8.048-21.1 0-29.15v-42.183l29.828 29.829c0 11.383 9.227 20.61 20.61 20.61 11.384 0 20.612-9.227 20.612-20.61 0-11.384-9.228-20.611-20.611-20.611l-29.83-29.829h42.185c8.05 8.05 21.1 8.05 29.148 0 8.05-8.049 8.05-21.1 0-29.149" fill="#ffb13b"/></svg>
+                    BugFix Inc.
+                </div>
+                <address class="footer-mapaddress">
+                    〒100-0000 東京都千代田区丸の内１－１－１<br/>
+                    <a href="https://maps.app.goo.gl/VgQk2zMhNMmGcVNf7" target="_blank">Google Map</a>
+                </address>
+            </figcaption>
+        </figure>
+        <hr class="footer-line" />
+        <small class="footer-copy">Copyright ©BugFix Inc.</small>
+    </footer>
+
+
+    <script src="./assets/js/particles.min.js"></script>
+    <script src="./assets/js/app.js"></script>
 </body>
 </html>
