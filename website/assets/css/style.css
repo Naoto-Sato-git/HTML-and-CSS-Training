@@ -13,9 +13,14 @@ body {
   color: #333;
 }
 
-/* Section */
+/*
+Section
+*/
 .section{
     padding: 30px 15px;
+}
+.section.section-secondary{
+    background: #efefef;
 }
 .section-headline{
     text-align: center;
@@ -24,12 +29,56 @@ body {
     margin:0 0 40px 0;
 }
 
-/* About */
+/*
+About 
+*/
 .about{
     margin:0;
     display: flex;
 }
-.about-image{}
-.about-caption{}
-.about-headline{}
-.about-description{}
+/* .about-image{} */
+.about-caption{
+    padding-left:15px;
+}
+.about-headline{
+    margin:0 0 20px;
+    font-size: 30px;
+}
+/* .about-description{} */
+
+.grid{
+    margin:0;
+    padding:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.grid-item{
+    list-style:none;
+}
+.grid-col-2 > .grid-item{
+    width:50%;
+}
+.grid-col-3 > .grid-item{
+    width:33.3%
+}
+.grid-col-4 > .grid-item{
+    width:25%;
+}
+
+
+.feature{
+    text-align:center;
+    padding:0 15px;
+}
+.feature-headline{
+    font-weight:bold;
+    margin:0 0 20px;
+}
+.feature-img{
+    margin:0 0 20px;
+}
+.feature-description{
+    margin:0;
+    text-align:left;
+}

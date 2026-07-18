@@ -52,5 +52,28 @@ p{
 ・figureタグ：画像とそれを説明するためのタグ
 <br>imgタグの部分で画像や図、ソースコードなどを入れる
 <br>画像が表示されなかった場合に、代わりのテキストを表示するのがalt属性
+<br>widthとheightで画像の横幅と高さを設定することも可能
 <br>・figcaptionタグ：図・画像の説明のテキストを入れておく部分
 <br>ダミー画像：https://dummyimage.com/
+・dlタグ：データの見出しとコンテンツを紐づける
+<br>ダミーアイコン：https://www.flaticon.com/
+
+### 使うプロパティ
+```css
+.about{
+    margin:0;
+    display: flex;
+}
+```
+・display:flexプロパティ：特定のタグの子要素を横並びにできる
+<br>チートシート：https://www.webcreatorbox.com/blog/css-flexbox-cheat-sheet
+```css
+.grid{
+    margin:0;
+    padding:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+```
+・slign-items:center：display:flexがつく要素を中央揃えにする。
